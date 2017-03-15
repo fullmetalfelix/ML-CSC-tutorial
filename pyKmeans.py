@@ -64,7 +64,7 @@ def Kmeans(X,K):
             pointsInCluster[nint-1,0] = pointsInCluster[nint-1,0] + 1
 
         for k in range(1,K+1):
-            print "k= \n %s" %k
+            #print "k= \n %s" %k
             if pointsInCluster[k-1,0] != 0:
                 # take the mean of all data point per each cluster
                 mu_k[k-1,:]= np.divide(mu_k[k-1,:],pointsInCluster[k-1,0])
@@ -75,7 +75,8 @@ def Kmeans(X,K):
 
         pos_diff_temp = sum((mu_k - oldPositions)**2)
         pos_diff=sum(pos_diff_temp)
-        print "mu_k (centroid) values (at the end): \n %s" % mu_k # print the centroids
+        #print "mu_k (centroid) values (at the end): \n %s" % mu_k # print the centroids
 
     assignment1=assignment.astype(int) # to convert the cluster index to be integer
+    print "mu_k (centroid) values: \n %s" % mu_k # print the centroids
     return assignment1, mu_k

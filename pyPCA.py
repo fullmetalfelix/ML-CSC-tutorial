@@ -16,3 +16,11 @@ def PCA(X):
                                # by multiplying the original matrix
                                # with eigenvector
     return V,Yn,D
+
+def zscore(X): # z-score uses to normalise the data.
+    [nX,mX]=X.shape              # X has NxD
+    XMean=np.mean(X,axis=0)      # take the mean of every row X
+    XStd=np.std(X,axis=0,ddof=1) # take the std of every row X
+    zX = X - np.kron(np.ones((nX,1)),XMean) # Z=[X - mX]
+    Zscore = np.divide(zX,XStd)             # Zscore = Z/Xstd
+    return Zscore
