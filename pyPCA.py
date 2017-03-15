@@ -24,3 +24,5 @@ def zscore(X): # z-score uses to normalise the data.
     zX = X - np.kron(np.ones((nX,1)),XMean) # Z=[X - mX]
     Zscore = np.divide(zX,XStd)             # Zscore = Z/Xstd
     return Zscore
+
+
