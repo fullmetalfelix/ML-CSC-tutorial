@@ -78,5 +78,5 @@ def Kmeans(X,K):
         #print "mu_k (centroid) values (at the end): \n %s" % mu_k # print the centroids
 
     assignment1=assignment.astype(int) # to convert the cluster index to be integer
-    print "mu_k (centroid) values: \n %s" % mu_k # print the centroids
+    print ("mu_k (centroid) values: \n %s" % mu_k) # print the centroids
     return assignment1, mu_k
