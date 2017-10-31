@@ -17,7 +17,7 @@ class KRRsolver:
         self.trainIn = None
         self.trainOut = None
         
-        print "KRR solver initialised."
+        print("KRR solver initialised.")
         
     
     
@@ -30,8 +30,8 @@ class KRRsolver:
         # start with a 0 matrix of the right size
         self.kmatrix = numpy.zeros((self.nTrain,self.nTrain))
 
-        for i in xrange(self.nTrain):
-            for j in xrange(0,i+1):
+        for i in range(self.nTrain):
+            for j in range(0,i+1):
 
                 # compute the distance between molecule i and j
                 self.kmatrix[i,j] = numpy.linalg.norm(trainIn[i]-trainIn[j])
@@ -51,8 +51,8 @@ class KRRsolver:
         nValid = validM.shape[0]
         
         self.Dmatrix = numpy.zeros((nValid, self.nTrain))
-        for i in xrange(nValid):
-            for j in xrange(self.nTrain):
+        for i in range(nValid):
+            for j in range(self.nTrain):
                 self.Dmatrix[i,j] = numpy.linalg.norm(validM[i]-self.trainIn[j])
         
         Epredict = numpy.dot(self.trainOut, numpy.dot(self.kmatrix, numpy.transpose(self.Dmatrix)))
