@@ -87,13 +87,13 @@ class NeuralNetwork(object):
         d2 = d2 * self.actfun_D(z2s)
         
         grad23 = numpy.kron(d3[0],a2s[0]) * 0
-        for i in xrange(nins):
+        for i in range(nins):
             grad23 += numpy.kron(d3[i],a2s[i])
         grad23 = grad23 / nins
 
         #tr32 = numpy.transpose( numpy.asarray([d3,a2s]) )
         grad12 = numpy.kron(d2[0],inputList[0]) * 0
-        for i in xrange(nins):
+        for i in range(nins):
             grad12 += numpy.kron(d2[i],inputList[i])
         grad12 = grad12 / nins
         
@@ -124,7 +124,7 @@ class NeuralNetwork(object):
  
     def StochasticGradStep(self,inputList, outputList, batchSize):
  
-        indexes = xrange(len(inputList))
+        indexes = range(len(inputList))
         selection = random.sample(indexes, batchSize)
         batchIn = numpy.take(inputList,selection, axis=0)
         batchOut = numpy.take(outputList,selection, axis=0)
