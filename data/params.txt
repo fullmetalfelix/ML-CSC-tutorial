@@ -1,3 +1,0 @@
-parameters for 1 k model:
-noise level (\sqrt(\lambda)): 0.0002472
-length scale (\sigma): 244
