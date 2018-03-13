@@ -1,0 +1,4 @@
+Atom Centered Symmetry Functions
+
+Each atom is described by two- and three-body ACSF for a total of 145 values.
+Since the whole database would be larger than 1GB, there are only up to 40k atoms of each type.

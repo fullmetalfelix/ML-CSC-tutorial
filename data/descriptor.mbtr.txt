@@ -1,0 +1,4 @@
+Many Body Tensor Representation:
+
+For atom charges: MBTR fingerprint of each atom in the molecules.
+For total energy: MBTR of all elements in the molecule.

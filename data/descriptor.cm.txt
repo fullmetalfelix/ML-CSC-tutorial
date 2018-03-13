@@ -1,0 +1,8 @@
+Coulomb matrixes:
+
+The molecule is represented by a matrix of Coulomb energies [ Z_i Z_j / r_ij ].
+On the diagonal we use Z_i^2.4, just because it seems to work ok.
+The matrix is then diagonalised and we take its eigenvalues as descriptors.
+If a molecule has less than 29 atoms, the descriptor is padded with zeros.
+
+M. Rupp, et al., Physical Review Letters, 108, 058301 (2012)

@@ -1,0 +1,4 @@
+Bag of Bonds
+
+Each molecule is described by 15+5 integer numbers. The first 15 are the bound counts for each pair-type.
+The last 5 are the neighbour count of each type [H,C,N,O,F].

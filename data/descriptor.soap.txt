@@ -1,0 +1,7 @@
+Smooth Overlap of Atomic Positions:
+
+For atom charges: fingerprint of each atom in the molecules.
+For total energy: fingerprint of all atoms in the molecule.
+    1. soap.sum - all atoms summed together
+    2. soap.mean - mean of all atom SOAP
+    3. soap.centre - computed at the central point

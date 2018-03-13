@@ -1,0 +1,5 @@
+Bag of bonds - second order
+
+The atoms are assigned an ID between 0 and 202, depending on their type and chemical envorinment.
+Each atom is described by an array x so that x[i] = # of neighbours with ID i.
+Since the database is quite big, only up to 40k atoms of each type are included.

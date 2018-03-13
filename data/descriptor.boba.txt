@@ -1,0 +1,9 @@
+Bag of Bonds (atomic)
+
+Each atom is described by 6 integer numbers:
+1. coordination = total number of bonded neighbours
+2. coordination = number of bonded H
+3. coordination = number of bonded C
+4. coordination = number of bonded N
+5. coordination = number of bonded O
+6. coordination = number of bonded F

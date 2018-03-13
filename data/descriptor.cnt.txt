@@ -1,0 +1,5 @@
+Atom counts:
+
+Each molecule is represented by the count of each atom type found in it.
+There will be 5 numbers for each molecule, giving the total H,C,N,O,F atoms.
+This is effectively the chemical formula. Probably not a great descriptor!
