@@ -59,6 +59,6 @@ tornado==6.0.4
 traitlets==4.3.3
 wcwidth==0.1.8
 webencodings==0.5.1
-Werkzeug==1.0.0
+Werkzeug==2.2.3
 widgetsnbextension==3.5.1
 zipp==1.2.0
